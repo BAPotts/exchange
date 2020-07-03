@@ -10,7 +10,7 @@ $(document).ready(function() {
     event.preventDefault();
     
     // const userDollars = parseInt($('#user-input').val());
-    //const selectedCurrency = $("#select-currency").val();
+    const selectedCurrency = $("#select-currency").val();
 
     (async () => {
       let exchangeService = new ExchangeService();
@@ -18,12 +18,19 @@ $(document).ready(function() {
       if(!response) {
         $(".result").html('<h1>There has been an error processing your request</h1>');
       } else {
-        getElements(response);
+        getElements(selectedCurrency);
       }
     })();
 
-    function getElements(response) {
-      $('.result').text(`The exchange rate is: ${response.conversion_rates.AED}`);
+    function getElements(selectedCurrency) {
+     let currencyArray = ['AED', 'ARS', 'AUD', 'BGN', 'BRL'];
+     for (let i = 0; i < currencyArray.length; i++){
+       if (selectedCurrency === currencyArray[i]) {
+         alert(selectedCurrency);
+       } else {
+         alert("NOPE");
+       }  
+      }
     }
   });
 });
