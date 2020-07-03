@@ -28,7 +28,8 @@ $(document).ready(function() {
       for (let i = 0; i < currencyArray.length; i++){
         alert(currencyArray[i]);
         if (selectedCurrency === currencyArray[i]) {
-         let exchangeValue = (response.conversion_rates.selectedCurrency * userDollars);
+          
+         let exchangeValue = response.conversion_rates.selectedCurrency * userDollars;
           alert(exchangeValue);
         }  
       }
