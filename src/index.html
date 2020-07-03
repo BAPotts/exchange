@@ -6,7 +6,19 @@
     <title>Currency Exchange</title>
   </head>
   <body>
-    <div class="result"></div>
+  <form>
+    <label for="user-input">Enter an amount in US dollars:</label>
+    <input id="user-input" type="text">
+    <select id="select-currency" name="select-currency">
+      <option value="AED">UAE Dirham</option>
+      <option value="ARS">Argentine Peso</option>
+      <option value="AUD">Australian Dollar</option>
+      <option value="BGN">Bulgarian Lev</option>
+      <option value="BRL">Brazilian Real</option>
+    </select>
     <button class="btn-warning" id="exchange-btn">Exchange Now!</button>
+    </form>
+    
+    <div class="result"></div>
   </body>
 </html>
