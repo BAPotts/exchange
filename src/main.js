@@ -7,11 +7,10 @@ import $ from "jquery";
 
 async function getConversionRates() {
   const apiResponse = await getExchange();
-  console.log(apiResponse);
   if(!apiResponse) {
     $(".result").html('<p>Something Went Wrong!/<p>');
   } else {
-    return apiResponse;
+    $(".result").html(apiResponse.conversion_rates.USD);
   }
 }
 
