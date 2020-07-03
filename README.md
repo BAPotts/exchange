@@ -1,25 +1,9 @@
-# [Program Title]
+# Currency Exchanger
  
-  ### By [Author(s)]
+  ### By Beverly Potts
  
 ## Description
- Get Started:
  
-FIRST: [REMEMBER TO (1) CHANGE package.json PROJECT NAME AND DESCRIPTION TO CURRENT PROJECT NAME AND DESCRIPTION, (2) CHANGE TITLE OF HtmlWebpackPlugin IN webpack.config.js TO CURRENT PROJECT NAME, AND (3) CHANGE TITLE OF project-name.js IN SRC DIRECTORY TO NAME OF CURRENT PROJECT.]
- 
-SECOND:
-  $ npm install
-  $ npm install dotenv-webpack --save-dev
-  $ git init
-  $ git add .gitignore
-  $ git commit -m "Activate .gitignore"
-  $ npm run build
-  $ git add .
-  $ git commit -m "Initial global commit"
- 
-  $ npm run start (to initiate live server)
-  
-  [Description of program functionality & intent presented as an elevator pitch.]
  
 ## Languages & Technologies Used:
  
@@ -33,7 +17,6 @@ SECOND:
   * WebPack
  
   ### Operating Systems & Programs
-  * Brave
   * Git Bash
   * Google Chrome
   * Microsoft Windows 10
@@ -57,7 +40,9 @@ SECOND:
  
   | Program Behavior | Example Behavior | Example Output |
   | ----------- | ----------- | ----------- |
-  |  |  |  |
+  |  Program will take a user-inputted amount in US dollars| Enter an amount in USD:"10" |  |
+  |  Program will allow user to select one of five currencies to exchange to |  |
+  |  Program will convert and display exchanged currency amount |USD:"10"|AUD:"14.44"|
   
  
 ## Known Bugs
@@ -66,9 +51,7 @@ SECOND:
  
 ### Contributors
  
-  * Taylor Somers
-  * [Other Contributor(s): Anyone who contributed at least %5 of the total product.]
- 
+  * Beverly Potts
 ### License
  
-This website is licensed under the GNU General Public License GPLv3. (C) 2020 Taylor Somers. All rights reserved.
+This website is licensed under the GNU General Public License GPLv3. (C) 2020 Beverly Potts. All rights reserved.
