@@ -24,13 +24,11 @@ $(document).ready(function() {
 
     function getElements(selectedCurrency, response, userDollars) {
       let currencyArray = ['AED', 'ARS', 'AUD', 'BGN', 'BRL'];
-      alert(selectedCurrency);
       for (let i = 0; i < currencyArray.length; i++){
-        alert(currencyArray[i]);
         if (selectedCurrency === currencyArray[i]) {
           
-         let exchangeValue = response.conversion_rates.selectedCurrency * userDollars;
-          alert(exchangeValue);
+         let exchangeValue = response.conversion_rates[selectedCurrency] * userDollars;
+          $(".result").text("$" + Math.round(userDollars) + "= " + Math.round(exchangeValue) + selectedCurrency);
         }  
       }
     }
