@@ -30,10 +30,16 @@
   5.  Use a file extractor or unzip program (such as PeaZip, Unzipper, WinZip, Zipware, or 7-ZIP) to extract the ZIP files onto your computer.
   6.  Open the directory containing the extracted files.
   7.  Open your computer's terminal and navigate to the directory bearing the name of the program and containing the top level subdirectories and files.
-  8.  Enter the command "$ npm install" in the terminal and press "Enter".
-  9.  Enter the command "$ npm run build" in the terminal and press "Enter".
-  10. Enter the command "$ npm run start" in the terminal and press "Enter".
-  11. The program should open and run with its user interface accessible in your default web browser.
+  8. Use a code editor like VS Code to open project files.
+  9. Within the top level directory of the project (exchange folder), create a file called .env.
+  10. In your web browser, navigate to https://https://www.exchangerate-api.com/. Enter your email into the box that says "your email address" and click on the "Get free key" button. Follow instructions for signup.
+  11. Copy the string of numbers and letters in the blue box following "Your API Key".
+  12.  Return to your code editor and open your .env file.
+  13. Enter "API_KEY =" followed by your copied API key and save file.
+  14. Enter the command "$ npm install" in the terminal and press "Enter".
+  15.  Enter the command "$ npm run build" in the terminal and press "Enter".
+  16. Enter the command "$ npm run start" in the terminal and press "Enter".
+  17. The program should open and run with its user interface accessible in your default web browser.
  
 ## Specifications
  
